@@ -12,9 +12,19 @@ import writenex from '@imjp/writenex-astro';
 
 export default defineConfig({
   output: 'static',
-  site: 'https://shravonix.com',
+  site: 'https://jaainil.com',
   redirects: {
-    '/the-art-of-feature-flagging-jiocinemas-approach-to-managing-features-at-scale': '/articles/jio-hotstar-s-feature-flagging-how-they-ship-at-scale',
+    '/the-art-of-feature-flagging-jiocinemas-approach-to-managing-features-at-scale': '/',
+    '/articles': '/',
+    '/articles/*': '/',
+    '/authors': '/',
+    '/authors/*': '/',
+    '/guest': '/',
+    '/legal/*': '/',
+    '/rss.xml': '/',
+    '/llms.txt': '/',
+    '/llms-small.txt': '/',
+    '/llms-full.txt': '/',
   },
   integrations: [
     react(),

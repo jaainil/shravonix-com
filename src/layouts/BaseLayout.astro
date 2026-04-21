@@ -24,77 +24,73 @@ interface Props {
 }
 
 const {
-  title = 'Shravonix - Tech News & Deep Dives',
-  description = 'In-depth technical analysis on AI models, browser engines, web frameworks, Linux kernel, and hardware. Nerdy insights for developers and tech enthusiasts who want deep technical content.',
-  image = 'https://shravonix.com/og.jpg',
+  title = 'Jainil Prajapati — Full-Stack Developer | AI Enthusiast',
+  description = 'Full-Stack Developer passionate about building scalable SaaS platforms and contributing to open-source ecosystems. Built Writenex CMS, run Shravonix, and contribute to Dokploy.',
+  image = 'https://jaainil.com/og.jpg',
   articleData = null,
   resolvedAuthors = null,
 } = Astro.props;
 const url = new URL(Astro.url.pathname, Astro.site);
 const currentUrl = url.toString();
 
-const SITE_URL = 'https://shravonix.com';
+const SITE_URL = 'https://jaainil.com';
 const LOGO_URL = `${SITE_URL}/shravonix.png`;
 const OG_FALLBACK = `${SITE_URL}/og.jpg`;
 
-const organizationSchema = {
+const personSchema = {
   '@context': 'https://schema.org',
-  '@type': ['Organization', 'NewsMediaOrganization'],
-  '@id': `${SITE_URL}/#organization`,
-  name: 'Shravonix',
-  alternateName: 'Shravonix Media',
-  description: 'In-depth technical analysis on AI, Linux, IoT, and software engineering for developers and tech enthusiasts.',
+  '@type': 'Person',
+  '@id': `${SITE_URL}/#person`,
+  name: 'Jainil Prajapati',
+  alternateName: 'jaainil',
+  description: 'Full-Stack Developer passionate about building scalable SaaS platforms and contributing to open-source ecosystems.',
   url: SITE_URL,
-  logo: {
+  image: {
     '@type': 'ImageObject',
-    '@id': `${SITE_URL}/#logo`,
-    url: LOGO_URL,
+    url: 'https://storage.rxresu.me/clwlkfh7b0bgqtojz2itm0gc5/pictures/wtpe5ep6q61y0h1fkatnigk6.jpg',
     width: 512,
     height: 512,
-    caption: 'Shravonix',
   },
-  image: {
-    '@id': `${SITE_URL}/#logo`,
-  },
-  email: 'hello@shravonix.com',
+  email: 'jainilprajapati9@gmail.com',
+  telephone: '+919725284302',
   address: {
     '@type': 'PostalAddress',
-    streetAddress: 'A/6 Shantivilla Residency, SVIT College Road',
-    addressLocality: 'Vasad',
+    addressLocality: 'Anand',
     addressRegion: 'Gujarat',
-    postalCode: '388306',
     addressCountry: 'IN',
   },
-  foundingDate: '2026',
   sameAs: [
-    'https://twitter.com/shravonix',
-    'https://github.com/shravonix',
+    'https://www.linkedin.com/in/jaainil/',
+    'https://github.com/jaainil',
+    'https://www.npmjs.com/~imjp',
+    'https://x.com/jaainil',
   ],
-  contactPoint: {
-    '@type': 'ContactPoint',
-    email: 'hello@shravonix.com',
-    contactType: 'editorial',
-    availableLanguage: 'English',
-  },
+  knowsAbout: ['Web Development', 'SaaS', 'Open Source', 'AI/ML'],
+  alumniOf: [
+    {
+      '@type': 'CollegeOrUniversity',
+      name: 'Sardar Vallabhbhai Patel Institute of Technology',
+    }
+  ],
 };
 
 const siteSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
   '@id': `${SITE_URL}/#website`,
-  name: 'Shravonix',
-  alternateName: 'Shravonix — Tech News & Deep Dives',
-  description: 'In-depth technical analysis on AI models, browser engines, web frameworks, Linux kernel, and hardware. Nerdy insights for developers and tech enthusiasts.',
+  name: 'Jainil Prajapati Portfolio',
+  alternateName: 'jaainil.com',
+  description: 'Full-Stack Developer portfolio showcasing projects, experience, and open-source contributions.',
   url: SITE_URL,
   inLanguage: 'en',
   publisher: {
-    '@id': `${SITE_URL}/#organization`,
+    '@id': `${SITE_URL}/#person`,
   },
   potentialAction: {
     '@type': 'SearchAction',
     target: {
       '@type': 'EntryPoint',
-      urlTemplate: `${SITE_URL}/articles?category=All&q={search_term_string}`,
+      urlTemplate: `${SITE_URL}/?q={search_term_string}`,
     },
     'query-input': 'required name=search_term_string',
   },
@@ -134,7 +130,7 @@ const articleSchema = articleData ? {
     '@id': `${SITE_URL}/#website`,
   },
   publisher: {
-    '@id': `${SITE_URL}/#organization`,
+    '@id': `${SITE_URL}/#person`,
   },
   inLanguage: 'en',
   ...(articleData.tags?.length && { keywords: articleData.tags.join(', ') }),
@@ -157,7 +153,6 @@ const articleSchema = articleData ? {
       })();
     </script>
     <link rel="canonical" href={currentUrl} />
-    <link rel="alternate" type="application/rss+xml" title="Shravonix - Tech News & Deep Dives" href="/rss.xml" />
     <link rel="sitemap" href="/sitemap-index.xml" />
     <link rel="apple-touch-icon" sizes="180x180" href="/shravonix.png" />
     <Seo
@@ -174,12 +169,12 @@ const articleSchema = articleData ? {
       }}
       twitter={{
         image: image,
-        site: '@shravonix',
+        site: '@jaainil',
         card: 'summary_large_image'
       }}
     />
     {articleSchema && <Schema item={articleSchema as any} />}
-    <Schema item={organizationSchema as any} />
+    <Schema item={personSchema as any} />
     <Schema item={siteSchema as any} />
     <slot name="head" />
   </head>
