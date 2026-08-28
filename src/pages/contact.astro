@@ -1,0 +1,217 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Icon from '../components/Icon.astro';
+import { contact, site } from '../data/site';
+---
+
+<BaseLayout
+  title="Contact & Free Site Survey — Shravonix · Anand, Nadiad"
+  description="Book a free CCTV site survey or request an AMC quote. Shravonix serves Anand, Nadiad and Gujarat — phone, WhatsApp, email."
+>
+  <section class="border-b border-[var(--seam)]">
+    <div class="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 lg:grid-cols-12 lg:py-20">
+      <div class="lg:col-span-5">
+        <h1 class="display text-4xl sm:text-5xl">Talk to us.</h1>
+        <p class="measure mt-6 text-lg leading-relaxed text-[var(--ink-mid)]">
+          Tell us about the site and what keeps you up at night. We will come back with straight questions — and the
+          survey costs nothing.
+        </p>
+
+        <div class="mt-10 space-y-4">
+          <a href={contact.phoneHref} class="plate group flex items-center gap-4 p-5 transition-colors hover:border-[var(--blue)]">
+            <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-md bg-[var(--tint)] text-[var(--blue-deep)]">
+              <Icon name="phone" class="h-5 w-5" />
+            </span>
+            <span>
+              <span class="data block text-[var(--ink-low)]">Call</span>
+              <span class="block font-semibold text-[var(--ink)]">{contact.phoneDisplay}</span>
+            </span>
+          </a>
+          <a
+            href={contact.whatsappHref}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="plate group flex items-center gap-4 p-5 transition-colors hover:border-[var(--green)]"
+          >
+            <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-md bg-[var(--tint)] text-[var(--green)]">
+              <Icon name="whatsapp" class="h-5 w-5" />
+            </span>
+            <span>
+              <span class="data block text-[var(--ink-low)]">WhatsApp</span>
+              <span class="block font-semibold text-[var(--ink)]">Message us directly</span>
+            </span>
+          </a>
+          <a href={`mailto:${contact.email}`} class="plate group flex items-center gap-4 p-5 transition-colors hover:border-[var(--blue)]">
+            <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-md bg-[var(--tint)] text-[var(--blue-deep)]">
+              <Icon name="mail" class="h-5 w-5" />
+            </span>
+            <span>
+              <span class="data block text-[var(--ink-low)]">Email</span>
+              <span class="block font-semibold text-[var(--ink)]">{contact.email}</span>
+            </span>
+          </a>
+        </div>
+
+        <dl class="seams mt-8 border-y border-[var(--seam)]">
+          <div class="flex items-center justify-between py-3.5">
+            <dt class="data text-[var(--ink-low)]">Hours</dt>
+            <dd class="text-sm text-[var(--ink-mid)]">{contact.hours}</dd>
+          </div>
+          <div class="flex items-center justify-between py-3.5">
+            <dt class="data text-[var(--ink-low)]">Based in</dt>
+            <dd class="text-sm text-[var(--ink-mid)]">{contact.cities.join(' & ')}, {contact.region}</dd>
+          </div>
+          <div class="flex items-center justify-between py-3.5">
+            <dt class="data text-[var(--ink-low)]">Coverage</dt>
+            <dd class="text-sm text-[var(--ink-mid)]">All of Gujarat, B2B & B2C</dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="lg:col-span-7" id="survey">
+        <form id="survey-form" class="plate bolted p-6 sm:p-9" novalidate>
+          <h2 class="subdisplay text-2xl">Request a free site survey</h2>
+          <p class="mt-2 text-sm text-[var(--ink-mid)]">
+            Opens your email app with the details filled in — no accounts, no spam.
+          </p>
+
+          <div class="mt-7 grid gap-5 sm:grid-cols-2">
+            <div class="sm:col-span-1">
+              <label for="f-name" class="data block text-[var(--ink-low)]">Name</label>
+              <input
+                id="f-name"
+                name="name"
+                type="text"
+                required
+                autocomplete="name"
+                placeholder="Your name"
+                class="mt-2 w-full rounded-md border border-[var(--seam-strong)] bg-[var(--tint)] px-4 py-3 text-sm text-[var(--ink)] placeholder:text-[var(--ink-low)] focus:border-[var(--blue)] focus:outline-none"
+              />
+            </div>
+            <div class="sm:col-span-1">
+              <label for="f-phone" class="data block text-[var(--ink-low)]">Phone</label>
+              <input
+                id="f-phone"
+                name="phone"
+                type="tel"
+                required
+                autocomplete="tel"
+                placeholder="+91"
+                class="mt-2 w-full rounded-md border border-[var(--seam-strong)] bg-[var(--tint)] px-4 py-3 text-sm text-[var(--ink)] placeholder:text-[var(--ink-low)] focus:border-[var(--blue)] focus:outline-none"
+              />
+            </div>
+            <div class="sm:col-span-2">
+              <label for="f-type" class="data block text-[var(--ink-low)]">Site type</label>
+              <select
+                id="f-type"
+                name="type"
+                required
+                class="mt-2 w-full appearance-none rounded-md border border-[var(--seam-strong)] bg-[var(--tint)] px-4 py-3 text-sm text-[var(--ink)] focus:border-[var(--blue)] focus:outline-none"
+              >
+                <option value="">Select…</option>
+                <option>Factory / manufacturing</option>
+                <option>Warehouse / logistics</option>
+                <option>Office / IT park</option>
+                <option>School / college / institution</option>
+                <option>Hospital / healthcare</option>
+                <option>Shop / showroom / retail</option>
+                <option>Home / apartment</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="sm:col-span-2">
+              <label for="f-city" class="data block text-[var(--ink-low)]">Site location</label>
+              <input
+                id="f-city"
+                name="city"
+                type="text"
+                required
+                placeholder="City / industrial estate"
+                class="mt-2 w-full rounded-md border border-[var(--seam-strong)] bg-[var(--tint)] px-4 py-3 text-sm text-[var(--ink)] placeholder:text-[var(--ink-low)] focus:border-[var(--blue)] focus:outline-none"
+              />
+            </div>
+            <div class="sm:col-span-2">
+              <label for="f-msg" class="data block text-[var(--ink-low)]">What do you need?</label>
+              <textarea
+                id="f-msg"
+                name="message"
+                rows="4"
+                placeholder="Approximate area, number of entrances, whether you already have cameras, AMC for an existing system…"
+                class="mt-2 w-full resize-y rounded-md border border-[var(--seam-strong)] bg-[var(--tint)] px-4 py-3 text-sm text-[var(--ink)] placeholder:text-[var(--ink-low)] focus:border-[var(--blue)] focus:outline-none"></textarea>
+            </div>
+          </div>
+
+          <p id="form-error" class="mt-4 hidden text-sm text-[var(--amber)]" role="alert">
+            Please fill name, phone, site type and location — the rest helps but can wait.
+          </p>
+
+          <div class="mt-7 flex flex-wrap items-center gap-3">
+            <button
+              type="submit"
+              class="group flex items-center gap-2.5 rounded-md bg-[var(--blue)] px-6 py-3.5 text-sm font-bold text-white transition-colors hover:bg-[var(--blue-deep)]"
+            >
+              Send survey request
+              <Icon name="arrow" class="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+            </button>
+            <a
+              id="wa-compose"
+              href={contact.whatsappHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex items-center gap-2.5 rounded-md border border-[var(--seam-strong)] px-6 py-3.5 text-sm font-semibold text-[var(--ink)] transition-colors hover:border-[var(--green)] hover:text-[var(--green)]"
+            >
+              <Icon name="whatsapp" class="h-4 w-4" />
+              Send on WhatsApp instead
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<script>
+  import { contact, site } from '../data/site';
+
+  const form = document.getElementById('survey-form') as HTMLFormElement | null;
+  const error = document.getElementById('form-error');
+  const wa = document.getElementById('wa-compose');
+
+  const read = () => {
+    const g = (id: string) => (document.getElementById(id) as HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement)?.value?.trim() ?? '';
+    return { name: g('f-name'), phone: g('f-phone'), type: g('f-type'), city: g('f-city'), msg: g('f-msg') };
+  };
+
+  const compose = (d: ReturnType<typeof read>) =>
+    [
+      `Site survey request — ${site.name}`,
+      `Name: ${d.name}`,
+      `Phone: ${d.phone}`,
+      `Site type: ${d.type}`,
+      `Location: ${d.city}`,
+      `Needs: ${d.msg || '—'}`,
+    ].join('\n');
+
+  form?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const d = read();
+    const valid = d.name && d.phone && d.type && d.city;
+    if (!error) return;
+    if (!valid) {
+      error.classList.remove('hidden');
+      return;
+    }
+    error.classList.add('hidden');
+    const subject = `Site survey request — ${d.type}, ${d.city}`;
+    window.location.href = `mailto:${contact.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(compose(d))}`;
+  });
+
+  // WhatsApp compose stays live as fields change.
+  const refreshWa = () => {
+    if (!wa) return;
+    const d = read();
+    wa.href = `${contact.whatsappHref}?text=${encodeURIComponent(compose(d))}`;
+  };
+  form?.addEventListener('input', refreshWa);
+  refreshWa();
+</script>

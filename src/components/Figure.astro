@@ -1,0 +1,36 @@
+---
+/**
+ * Figure plate — document grammar for product art: a figure reference,
+ * an honest caption, optional status stamp. Replaces the old feed-frame
+ * chrome; reads like a page from a quotation document.
+ */
+interface Props {
+  fig: string;
+  caption: string;
+  stamp?: string;
+  tone?: 'blue' | 'ink';
+  class?: string;
+}
+const { fig, caption, stamp, tone = 'ink', class: className = '' } = Astro.props;
+const toneClass = tone === 'blue' ? 'text-[var(--blue-deep)]' : 'text-[var(--ink-mid)]';
+---
+
+<figure class={`plate relative overflow-hidden ${className}`}>
+  <figcaption class={`flex items-center gap-3 border-b border-[var(--seam)] px-4 py-2.5 ${toneClass}`}>
+    <span class="data font-bold">{fig}</span>
+    <span class="data text-[var(--ink-low)]">{caption}</span>
+    {
+      stamp && (
+        <span class="stamp data ml-auto text-[var(--green)]">
+          <svg class="h-3 w-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4.5 12.5 l5 5 L19.5 7" />
+          </svg>
+          {stamp}
+        </span>
+      )
+    }
+  </figcaption>
+  <div class="relative bg-[var(--card)]">
+    <slot />
+  </div>
+</figure>

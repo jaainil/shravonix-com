@@ -1,152 +1,62 @@
 ---
-import '@fontsource-variable/inter';
-import '@fontsource-variable/space-grotesk';
+import '@fontsource-variable/archivo';
 import '@fontsource-variable/jetbrains-mono';
 
 import Navbar from '../components/Navbar.astro';
 import Footer from '../components/Footer.astro';
 import { Seo } from 'astro-seo-meta';
 import { Schema } from 'astro-seo-schema';
+import { contact, site } from '../data/site';
 import '../styles/global.css';
-
-interface ResolvedAuthor {
-  name: string;
-  avatarUrl?: string;
-  slug?: string;
-}
 
 interface Props {
   title?: string;
   description?: string;
-  image?: string;
-  articleData?: any;
-  resolvedAuthors?: ResolvedAuthor[];
 }
 
 const {
-  title = 'Jainil Prajapati — DevOps & Infrastructure Engineer | Linux & Systems Support',
-  description = 'Portfolio of Jainil Prajapati. DevOps and Infrastructure Engineer experienced in Docker containerization, CI/CD pipeline automation, Linux server administration, Proxmox virtualization, and open source development.',
-  image = 'https://storage.rxresu.me/clwlkfh7b0bgqtojz2itm0gc5/pictures/wtpe5ep6q61y0h1fkatnigk6.jpg',
-  articleData = null,
-  resolvedAuthors = null,
+  title = 'Shravonix — Enterprise CCTV & Surveillance Systems · Anand, Nadiad, Gujarat',
+  description = site.description,
 } = Astro.props;
-const url = new URL(Astro.url.pathname, Astro.site);
-const currentUrl = url.toString();
 
-const SITE_URL = 'https://shravonix.com';
-const LOGO_URL = `${SITE_URL}/shravonix.png`;
-const OG_FALLBACK = `${SITE_URL}/og.jpg`;
+const url = new URL(Astro.url.pathname, Astro.site).toString();
+const SITE_URL = site.url;
+const OG = `${SITE_URL}/og.jpg`;
 
-const personSchema = {
+const businessSchema = {
   '@context': 'https://schema.org',
-  '@type': 'Person',
-  '@id': `${SITE_URL}/#person`,
-  name: 'Jainil Prajapati',
-  jobTitle: 'DevOps Engineer | Cloud & Platform Infrastructure',
-  url: 'https://jaainil.com/',
-  image: 'https://storage.rxresu.me/clwlkfh7b0bgqtojz2itm0gc5/pictures/wtpe5ep6q61y0h1fkatnigk6.jpg',
-  email: 'jainilprajapati9@gmail.com',
-  telephone: '+919725284302',
+  '@type': 'ProfessionalService',
+  '@id': `${SITE_URL}/#business`,
+  name: site.name,
+  slogan: site.tagline,
+  description: site.description,
+  url: SITE_URL,
+  logo: `${SITE_URL}/mark.png`,
+  image: OG,
+  telephone: contact.phoneHref.replace('tel:', ''),
+  email: contact.email,
   address: {
     '@type': 'PostalAddress',
     addressLocality: 'Anand',
     addressRegion: 'Gujarat',
     addressCountry: 'IN',
   },
-  sameAs: [
-    'https://www.linkedin.com/in/jaainil/',
-    'https://github.com/jaainil',
-    'https://www.npmjs.com/~imjp',
-    'https://www.reddit.com/r/AI_India/',
-  ],
-  worksFor: {
-    '@type': 'Organization',
-    name: 'Aexawareinfotech Pvt. Ltd.',
-  },
-  alumniOf: {
-    '@type': 'EducationalOrganization',
-    name: 'Sardar Vallabhbhai Patel Institute of Technology',
-  },
-};
-
-const organizationSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'Person',
-  '@id': `${SITE_URL}/#organization`,
-  name: 'Jainil Prajapati',
-  alternateName: 'Jainil Prajapati — DevOps & Infrastructure Engineer',
-  description: 'DevOps engineering, infrastructure automation, systems troubleshooting, and in-depth technical analysis.',
-  url: SITE_URL,
-  logo: {
-    '@type': 'ImageObject',
-    '@id': `${SITE_URL}/#logo`,
-    url: LOGO_URL,
-    width: 512,
-    height: 512,
-    caption: 'Jainil Prajapati',
-  },
-  image: {
-    '@id': `${SITE_URL}/#logo`,
-  },
-  founder: {
-    '@id': `${SITE_URL}/#person`,
-  },
-  sameAs: [
-    'https://github.com/jaainil',
-    'https://www.linkedin.com/in/jaainil/',
-    'https://www.npmjs.com/~imjp',
-  ],
+  areaServed: ['Anand', 'Nadiad', 'Kheda', 'Ahmedabad', 'Vadodara', 'Gujarat'],
+  openingHours: 'Mo-Sa 09:00-19:00',
+  priceRange: '$$',
+  knowsAbout: ['CCTV installation', 'Surveillance systems', 'IP cameras', 'NVR systems', 'Annual maintenance contracts', 'Remote monitoring'],
 };
 
 const siteSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
   '@id': `${SITE_URL}/#website`,
-  name: 'Jainil Prajapati — Portfolio & Tech Blog',
-  alternateName: 'Jainil Prajapati — DevOps & Infrastructure Engineer',
-  description: 'DevOps and Infrastructure Engineer experienced in Docker containerization, CI/CD pipeline automation, Linux administration, and open-source ecosystems.',
+  name: site.name,
+  description: site.description,
   url: SITE_URL,
   inLanguage: 'en',
-  publisher: {
-    '@id': `${SITE_URL}/#person`,
-  },
+  publisher: { '@id': `${SITE_URL}/#business` },
 };
-
-const schemaAuthors = resolvedAuthors
-  ? resolvedAuthors.map((a) => ({
-      '@type': 'Person',
-      name: a.name,
-      ...(a.avatarUrl && { image: a.avatarUrl }),
-      url: a.slug ? `${SITE_URL}/authors/${a.slug}` : SITE_URL,
-    }))
-  : articleData?.authors?.map((slug: string) => ({
-      '@type': 'Person',
-      name: slug,
-      url: `${SITE_URL}/authors/${slug}`,
-    }));
-
-const articleSchema = articleData ? {
-  '@context': 'https://schema.org',
-  '@type': 'TechArticle',
-  '@id': `${currentUrl}#article`,
-  headline: articleData.title,
-  description: articleData.description,
-  image: [image || OG_FALLBACK],
-  author: schemaAuthors,
-  datePublished: articleData.publishedAt instanceof Date ? articleData.publishedAt.toISOString() : articleData.publishedAt,
-  dateModified: articleData.updatedAt
-    ? (articleData.updatedAt instanceof Date ? articleData.updatedAt.toISOString() : articleData.updatedAt)
-    : (articleData.publishedAt instanceof Date ? articleData.publishedAt.toISOString() : articleData.publishedAt),
-  url: currentUrl,
-  mainEntityOfPage: {
-    '@type': 'WebPage',
-    '@id': currentUrl,
-  },
-  inLanguage: 'en',
-  ...(articleData.tags?.length && { keywords: articleData.tags.join(', ') }),
-  ...(articleData.category && { articleSection: articleData.category }),
-} : null;
-
 ---
 
 <!DOCTYPE html>
@@ -154,52 +64,84 @@ const articleSchema = articleData ? {
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script is:inline>
-      (function() {
-        var stored = localStorage.getItem('theme');
-        var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        if (stored === 'dark' || (!stored && prefersDark)) {
-          document.documentElement.classList.add('dark');
-        }
-      })();
-    </script>
-    <link rel="canonical" href={currentUrl} />
-    <link rel="alternate" type="application/rss+xml" title="Jainil Prajapati - Tech & DevOps Blog" href="/rss.xml" />
+    <link rel="canonical" href={url} />
     <link rel="sitemap" href="/sitemap-index.xml" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/shravonix.png" />
+    <link rel="apple-touch-icon" href="/mark.png" />
     <Seo
       title={title}
       description={description}
       icon="/favicon.ico"
-      themeColor="#000000"
-      colorScheme="dark"
+      themeColor="#f6f7f9"
+      colorScheme="light"
       robots="index, follow"
-      facebook={{
-        image: image,
-        url: currentUrl,
-        type: articleData ? 'article' : 'website'
-      }}
-      twitter={{
-        image: image,
-        site: '@jaainil',
-        card: 'summary_large_image'
-      }}
+      facebook={{ image: OG, url, type: 'website' }}
+      twitter={{ image: OG, card: 'summary_large_image' }}
     />
-    {articleSchema && <Schema item={articleSchema as any} />}
-    <Schema item={personSchema as any} />
-    <Schema item={organizationSchema as any} />
+    <Schema item={businessSchema as any} />
     <Schema item={siteSchema as any} />
     <slot name="head" />
   </head>
-  <body style="background-color: var(--color-bg); color: var(--color-text-primary);" class="font-sans transition-colors duration-200">
-    <div class="min-h-screen" style="background-color: var(--color-bg);">
-      <div class="max-w-7xl mx-auto min-h-screen flex flex-col border-x" style="background-color: var(--color-surface); border-color: var(--color-border);">
-        <Navbar />
-        <main class="grow">
-          <slot />
-        </main>
-        <Footer />
-      </div>
-    </div>
+  <body class="min-h-screen bg-[var(--paper)] font-sans antialiased">
+    <!--
+      DIRECTION CONTRACT — The Quotation Sheet (seed 053f1a97)
+      THESIS: the site reads like the honest technical document a buyer keeps:
+      figure plates, spec tables, a numbered process — refusing both the neon
+      control-room costume and the generic corporate template.
+      OWN-WORLD: paper white (#f6f7f9), white plates separated by hairline
+      rules (never shadow), ink-navy text, Shravonix blue as the structural
+      accent, mono only as data voice, stamp chips for process states, Archivo
+      wide caps for display. No glow, no surveillance chrome, no dark mode.
+      STORY: the visitor understands Shravonix supplies, installs and maintains
+      CCTV across Anand–Nadiad; believes it is engineering-led; acts on a free
+      site survey.
+      FIRST VIEWPORT: left — display headline "We design CCTV systems. We
+      don't just sell them.", supporting line, blue survey CTA and a call link;
+      right — white figure plate with the bullet-camera render and spec chips;
+      coverage strip runs beneath.
+      FORM: brief-pinned light replacement after user steer (the dark world
+      read AI-generated); lineage: engineering datasheets & quotation
+      documents; seed 053f1a97.
+      FINISH: unreviewed and undocumented is unfinished; this build ends with
+      the finish review, the verdict, DESIGN.md, and every shipping raster
+      carrying its provenance.
+    -->
+    <a
+      href="#main"
+      class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100] focus:rounded focus:bg-[var(--blue)] focus:px-4 focus:py-2 focus:text-sm focus:text-white"
+    >
+      Skip to content
+    </a>
+    <Navbar />
+    <main id="main">
+      <slot />
+    </main>
+    <Footer />
+
+    <script>
+      // Live timecodes for feed frames — data voice of the house.
+      const tick = () => {
+        const el = document.querySelector('[data-clock]');
+        if (!el) return;
+        const d = new Date();
+        const p = (n: number) => String(n).padStart(2, '0');
+        el.textContent = `${p(d.getHours())}:${p(d.getMinutes())}:${p(d.getSeconds())}`;
+      };
+      tick();
+      setInterval(tick, 1000);
+
+      // Single quiet entrance for sections.
+      const io = new IntersectionObserver(
+        (entries) => {
+          for (const e of entries) {
+            if (e.isIntersecting) {
+              e.target.classList.add('in');
+              io.unobserve(e.target);
+            }
+          }
+        },
+        { threshold: 0.12 }
+      );
+      document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+    </script>
   </body>
 </html>

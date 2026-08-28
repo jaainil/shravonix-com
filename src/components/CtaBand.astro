@@ -1,0 +1,42 @@
+---
+import Icon from './Icon.astro';
+import { contact } from '../data/site';
+
+interface Props {
+  title?: string;
+  body?: string;
+}
+const {
+  title = 'Book a free site survey.',
+  body = 'We walk the site, mark the blind spots and hand you a camera-count estimate — no obligation, no invoice. You decide with the drawing in your hand.',
+} = Astro.props;
+---
+
+<section class="border-t border-[var(--seam)] bg-[var(--card)]">
+  <div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:py-20">
+    <div class="grid items-center gap-8 lg:grid-cols-12">
+      <div class="lg:col-span-8">
+        <h2 class="display text-3xl sm:text-4xl">{title}</h2>
+        <p class="measure mt-4 text-[var(--ink-mid)]">{body}</p>
+      </div>
+      <div class="flex flex-wrap gap-3 lg:col-span-4 lg:justify-end">
+        <a
+          href="/contact#survey"
+          class="group flex items-center gap-2.5 rounded-md bg-[var(--blue)] px-6 py-3.5 text-sm font-bold text-white transition-colors hover:bg-[var(--blue-deep)]"
+        >
+          Request the survey
+          <Icon name="arrow" class="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+        </a>
+        <a
+          href={contact.whatsappHref}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex items-center gap-2.5 rounded-md border border-[var(--seam-strong)] px-6 py-3.5 text-sm font-semibold text-[var(--ink)] transition-colors hover:border-[var(--green)] hover:text-[var(--green)]"
+        >
+          <Icon name="whatsapp" class="h-4 w-4" />
+          WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

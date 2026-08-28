@@ -1,0 +1,96 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Icon from '../../components/Icon.astro';
+import Figure from '../../components/Figure.astro';
+import CameraRender from '../../components/hardware/CameraRender.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import { services, contact } from '../../data/site';
+
+const service = services[1];
+---
+
+<BaseLayout
+  title="AMC & Monitoring — Shravonix · Anand, Nadiad, Gujarat"
+  description="Annual maintenance contracts for CCTV systems: scheduled preventive visits, per-channel health checks, storage verification, firmware updates and priority response across Anand–Nadiad, Gujarat."
+>
+  <section class="border-b border-[var(--seam)]">
+    <div class="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 lg:grid-cols-12 lg:py-20">
+      <div class="flex flex-col justify-center lg:col-span-7">
+        <h1 class="display text-4xl sm:text-5xl lg:text-[3.4rem]">AMC &amp; monitoring</h1>
+        <p class="measure mt-6 text-lg leading-relaxed text-[var(--ink-mid)]">
+          {service.description}
+        </p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a
+            href="/contact#survey"
+            class="group flex items-center gap-2.5 rounded-md bg-[var(--blue)] px-6 py-3.5 text-sm font-bold text-white transition-colors hover:bg-[var(--blue-deep)]"
+          >
+            Request an AMC quote
+            <Icon name="arrow" class="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+          </a>
+          <a
+            href={contact.phoneHref}
+            class="flex items-center gap-2.5 rounded-md border border-[var(--seam-strong)] bg-[var(--card)] px-6 py-3.5 text-sm font-semibold text-[var(--ink)] transition-colors hover:border-[var(--blue)] hover:text-[var(--blue-deep)]"
+          >
+            <Icon name="phone" class="h-4 w-4" />
+            {contact.phoneDisplay}
+          </a>
+        </div>
+      </div>
+      <div class="flex flex-col justify-center lg:col-span-5">
+        <Figure fig="Fig. 04" caption="Recorder · health check" stamp="Maintained">
+          <CameraRender kind="nvr" class="h-auto w-full" />
+        </Figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="border-b border-[var(--seam)]">
+    <div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:py-20">
+      <h2 class="subdisplay reveal text-3xl">What the contract covers</h2>
+      <ul class="seams reveal mt-8 border-y border-[var(--seam)]">
+        {
+          service.points.map((p) => (
+            <li class="grid gap-2 py-5 md:grid-cols-12 md:gap-6">
+              <span class="md:col-span-1">
+                <Icon name="check" class="mt-0.5 h-5 w-5 text-[var(--green)]" />
+              </span>
+              <p class="text-sm leading-relaxed text-[var(--ink-mid)] md:col-span-11">{p}</p>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+
+  <section class="border-b border-[var(--seam)] bg-[var(--card)]">
+    <div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:py-20">
+      <div class="reveal max-w-3xl">
+        <h2 class="subdisplay text-3xl">Most failures are quiet.</h2>
+        <p class="measure mt-4 text-[var(--ink-mid)]">
+          A lens fogs. A drive fills. A cable works loose. The picture still shows on the monitor, right up until you
+          actually need the footage. The AMC makes those failures loud before they cost you.
+        </p>
+      </div>
+      <div class="reveal mt-10 grid gap-px overflow-hidden rounded-lg border border-[var(--seam)] bg-[var(--seam)] sm:grid-cols-3">
+        {
+          [
+            ['We find', 'Fogged lenses, out-of-focus channels, dead IR arrays and failing drives, before you notice.'],
+            ['We prevent', 'Scheduled visits, firmware patches, storage clean-ups and configuration backups.'],
+            ['We respond', 'A defined visit window on faults. Remote diagnostics first, van on site when needed.'],
+          ].map(([t, b]) => (
+            <div class="bg-[var(--paper)] p-6 lg:p-7">
+              <h3 class="subdisplay text-lg text-[var(--blue-deep)]">{t}</h3>
+              <p class="mt-2.5 text-sm leading-relaxed text-[var(--ink-mid)]">{b}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <CtaBand
+    title="Keep the system proven."
+    body="Ask for an AMC quote on your existing system. We audit it first, then tell you honestly what is worth maintaining."
+  />
+</BaseLayout>

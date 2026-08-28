@@ -1,0 +1,88 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Icon from '../../components/Icon.astro';
+import CameraRender from '../../components/hardware/CameraRender.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import { services, productCatalog } from '../../data/site';
+
+const service = services[0];
+const cameraCats = productCatalog.filter((c) => c.id !== 'nvr');
+---
+
+<BaseLayout
+  title="CCTV Supply & Installation — Shravonix · Anand, Nadiad, Gujarat"
+  description="CCTV dealership and systems integration: bullet, dome and PTZ surveillance supplied, installed and documented for factories, campuses, offices and homes across Anand–Nadiad, Gujarat."
+>
+  <section class="border-b border-[var(--seam)]">
+    <div class="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 lg:grid-cols-12 lg:py-20">
+      <div class="lg:col-span-7">
+        <h1 class="display text-4xl sm:text-5xl lg:text-[3.4rem]">CCTV supply &amp; installation</h1>
+        <p class="measure mt-6 text-lg leading-relaxed text-[var(--ink-mid)]">
+          {service.description}
+        </p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a
+            href="/contact#survey"
+            class="group flex items-center gap-2.5 rounded-md bg-[var(--blue)] px-6 py-3.5 text-sm font-bold text-white transition-colors hover:bg-[var(--blue-deep)]"
+          >
+            Book a free site survey
+            <Icon name="arrow" class="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+          </a>
+          <a
+            href="/products"
+            class="flex items-center gap-2.5 rounded-md border border-[var(--seam-strong)] px-6 py-3.5 text-sm font-semibold text-[var(--ink)] transition-colors hover:border-[var(--blue)] hover:text-[var(--blue-deep)]"
+          >
+            Browse hardware
+          </a>
+        </div>
+      </div>
+      <div class="hidden lg:col-span-5 lg:block">
+        <div class="plate overflow-hidden bg-[var(--tint)]">
+          <CameraRender kind="bullet" class="h-auto w-full" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="border-b border-[var(--seam)]">
+    <div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:py-20">
+      <h2 class="subdisplay reveal text-3xl">What you get, line by line.</h2>
+      <ul class="seams reveal mt-8 border-y border-[var(--seam)]">
+        {
+          service.points.map((p) => (
+            <li class="grid gap-2 py-5 md:grid-cols-12 md:gap-6">
+              <span class="md:col-span-1">
+                <Icon name="check" class="mt-0.5 h-5 w-5 text-[var(--green)]" />
+              </span>
+              <p class="text-sm leading-relaxed text-[var(--ink-mid)] md:col-span-11">{p}</p>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+
+  <section class="border-b border-[var(--seam)] bg-[var(--card)]">
+    <div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:py-20">
+      <div class="reveal flex flex-wrap items-end justify-between gap-4">
+        <h2 class="subdisplay text-3xl">Camera lines we deal in</h2>
+        <a href="/products" class="text-sm font-semibold text-[var(--blue-deep)] transition-colors hover:text-[var(--blue)]">Full catalogue →</a>
+      </div>
+      <div class="reveal mt-8 grid gap-5 sm:grid-cols-3">
+        {
+          cameraCats.map((cat) => (
+            <a href={`/products#${cat.id}`} class="plate group p-5 transition-colors hover:border-[var(--blue-deep)] hover:bg-[var(--tint)]">
+              <div class="bg-[var(--tint)]">
+                <CameraRender kind={cat.art} class="h-auto w-full" />
+              </div>
+              <h3 class="subdisplay mt-4 text-base">{cat.title}</h3>
+              <p class="mt-2 text-sm leading-relaxed text-[var(--ink-mid)]">{cat.intro}</p>
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <CtaBand />
+</BaseLayout>

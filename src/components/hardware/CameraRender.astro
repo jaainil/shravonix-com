@@ -1,0 +1,213 @@
+---
+/**
+ * Authored hardware renders — crisp vector product geometry in the
+ * house palette. SYNTHETIC: illustrative product art, not photos of
+ * stock. Replace with real product photography when available.
+ */
+interface Props {
+  kind: 'bullet' | 'dome' | 'ptz' | 'nvr';
+  class?: string;
+}
+const { kind, class: className = '' } = Astro.props;
+---
+
+{
+  kind === 'bullet' && (
+    <svg class={className} viewBox="0 0 520 400" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustrative render of an IR bullet surveillance camera">
+      <defs>
+        <linearGradient id="bl-body" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#1c2942" />
+          <stop offset="0.5" stop-color="#121b2e" />
+          <stop offset="1" stop-color="#0a1120" />
+        </linearGradient>
+        <linearGradient id="bl-shield" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#253352" />
+          <stop offset="1" stop-color="#0e1526" />
+        </linearGradient>
+        <radialGradient id="bl-glass" cx="0.38" cy="0.35" r="0.9">
+          <stop offset="0" stop-color="#12315c" />
+          <stop offset="0.55" stop-color="#0a1830" />
+          <stop offset="1" stop-color="#04070f" />
+        </radialGradient>
+        <linearGradient id="bl-arm" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#1b2740" />
+          <stop offset="1" stop-color="#0c1322" />
+        </linearGradient>
+      </defs>
+      {/* mounting base */}
+      <rect x="392" y="292" width="96" height="18" rx="4" fill="url(#bl-arm)" stroke="#2c3d61" stroke-width="1.5" />
+      <circle cx="412" cy="301" r="2.5" fill="#33456b" />
+      <circle cx="468" cy="301" r="2.5" fill="#33456b" />
+      {/* arm */}
+      <path d="M420 292 L420 220 Q420 196 398 182 L340 145" stroke="url(#bl-arm)" stroke-width="22" stroke-linecap="round" />
+      {/* knuckle */}
+      <circle cx="416" cy="214" r="17" fill="#141d33" stroke="#2c3d61" stroke-width="1.5" />
+      <circle cx="416" cy="214" r="6" fill="#22304d" />
+      {/* sun shield */}
+      <path d="M64 118 L330 96 Q352 94 352 116 L352 134 L64 148 Z" fill="url(#bl-shield)" stroke="#31426a" stroke-width="1.5" />
+      {/* body */}
+      <rect x="58" y="132" width="300" height="86" rx="40" fill="url(#bl-body)" stroke="#2c3d61" stroke-width="1.5" />
+      <rect x="70" y="142" width="180" height="6" rx="3" fill="#22304d" opacity="0.7" />
+      {/* front bezel */}
+      <circle cx="352" cy="175" r="58" fill="#0d1526" stroke="#31426a" stroke-width="1.5" />
+      <circle cx="352" cy="175" r="48" fill="#111a2e" stroke="#243354" stroke-width="1" />
+      {/* IR ring */}
+      <circle cx="352" cy="175" r="40" fill="none" stroke="#0c1425" stroke-width="14" />
+      <g fill="#3ad6ff" opacity="0.85">
+        {Array.from({ length: 16 }).map((_, i) => {
+          const a = (i / 16) * Math.PI * 2;
+          const x = 352 + Math.cos(a) * 40;
+          const y = 175 + Math.sin(a) * 40;
+          return <circle cx={x} cy={y} r="2.4" />;
+        })}
+      </g>
+      {/* lens glass */}
+      <circle cx="352" cy="175" r="24" fill="url(#bl-glass)" stroke="#1d2c4d" stroke-width="1" />
+      <circle cx="344" cy="166" r="7" fill="#3ad6ff" opacity="0.28" />
+      <circle cx="346" cy="168" r="2.6" fill="#bdeeff" opacity="0.85" />
+      {/* cable gland */}
+      <path d="M96 218 L96 244" stroke="#1b2740" stroke-width="10" stroke-linecap="round" />
+      <rect x="86" y="238" width="20" height="14" rx="3" fill="#141d33" stroke="#2c3d61" stroke-width="1.2" />
+    </svg>
+  )
+}
+{
+  kind === 'dome' && (
+    <svg class={className} viewBox="0 0 520 400" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustrative render of a ceiling dome surveillance camera">
+      <defs>
+        <radialGradient id="dm-glass" cx="0.5" cy="0.15" r="1.1">
+          <stop offset="0" stop-color="#1d2f55" />
+          <stop offset="0.45" stop-color="#0c1930" />
+          <stop offset="1" stop-color="#04070f" />
+        </radialGradient>
+        <linearGradient id="dm-base" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#1e2b47" />
+          <stop offset="1" stop-color="#0d1526" />
+        </linearGradient>
+      </defs>
+      {/* ceiling plane */}
+      <rect x="70" y="86" width="380" height="10" rx="2" fill="#101a2e" stroke="#2c3d61" stroke-width="1.2" />
+      <rect x="188" y="96" width="144" height="26" rx="8" fill="url(#dm-base)" stroke="#2c3d61" stroke-width="1.5" />
+      {/* trim ring */}
+      <ellipse cx="260" cy="150" rx="104" ry="26" fill="#16213a" stroke="#31426a" stroke-width="1.5" />
+      <ellipse cx="260" cy="154" rx="92" ry="22" fill="#0a1222" />
+      {/* dome */}
+      <path d="M168 154 Q168 236 260 236 Q352 236 352 154 Z" fill="url(#dm-glass)" stroke="#26365c" stroke-width="1.5" />
+      {/* inner lens */}
+      <circle cx="260" cy="196" r="30" fill="#060c18" stroke="#1d2c4d" stroke-width="1.2" />
+      <circle cx="260" cy="196" r="17" fill="#0d2140" />
+      <circle cx="254" cy="190" r="5" fill="#3ad6ff" opacity="0.4" />
+      <circle cx="255.5" cy="191.5" r="1.8" fill="#bdeeff" opacity="0.9" />
+      {/* IR dots inside rim */}
+      <g fill="#3ad6ff" opacity="0.6">
+        <circle cx="212" cy="168" r="2.2" />
+        <circle cx="308" cy="168" r="2.2" />
+        <circle cx="240" cy="160" r="2.2" />
+        <circle cx="280" cy="160" r="2.2" />
+      </g>
+      {/* rim light */}
+      <path d="M172 160 Q176 224 252 233" stroke="#3ad6ff" stroke-width="2" opacity="0.25" stroke-linecap="round" />
+      {/* screws */}
+      <circle cx="196" cy="108" r="2.5" fill="#33456b" />
+      <circle cx="324" cy="108" r="2.5" fill="#33456b" />
+    </svg>
+  )
+}
+{
+  kind === 'ptz' && (
+    <svg class={className} viewBox="0 0 520 400" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustrative render of a PTZ speed dome camera">
+      <defs>
+        <linearGradient id="pz-body" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#20304f" />
+          <stop offset="0.5" stop-color="#131e35" />
+          <stop offset="1" stop-color="#0a1120" />
+        </linearGradient>
+        <radialGradient id="pz-head" cx="0.4" cy="0.3" r="1">
+          <stop offset="0" stop-color="#20335c" />
+          <stop offset="0.6" stop-color="#0b1830" />
+          <stop offset="1" stop-color="#04070f" />
+        </radialGradient>
+      </defs>
+      {/* ceiling plane */}
+      <rect x="110" y="70" width="300" height="10" rx="2" fill="#101a2e" stroke="#2c3d61" stroke-width="1.2" />
+      {/* pendant */}
+      <path d="M260 80 L260 112" stroke="#1b2740" stroke-width="14" />
+      <rect x="238" y="110" width="44" height="20" rx="5" fill="#141d33" stroke="#2c3d61" stroke-width="1.4" />
+      {/* body */}
+      <path d="M196 130 Q196 118 214 118 L306 118 Q324 118 324 130 L324 190 Q324 210 300 214 L220 214 Q196 210 196 190 Z" fill="url(#pz-body)" stroke="#2c3d61" stroke-width="1.5" />
+      {/* heat ribs */}
+      <g stroke="#22304d" stroke-width="2.5" opacity="0.8">
+        <path d="M206 138 L314 138" />
+        <path d="M204 150 L316 150" />
+        <path d="M204 162 L316 162" />
+      </g>
+      {/* rotating head */}
+      <circle cx="260" cy="252" r="62" fill="url(#pz-head)" stroke="#31426a" stroke-width="1.5" />
+      <circle cx="260" cy="252" r="62" fill="none" stroke="#0c1425" stroke-width="10" opacity="0.6" />
+      {/* lens window */}
+      <circle cx="260" cy="252" r="30" fill="#050b16" stroke="#1d2c4d" stroke-width="1.2" />
+      <circle cx="260" cy="252" r="18" fill="url(#pz-head)" />
+      <circle cx="260" cy="252" r="8" fill="#0a1830" stroke="#24406e" stroke-width="1" />
+      <circle cx="254" cy="245" r="3.4" fill="#bdeeff" opacity="0.85" />
+      <circle cx="297" cy="228" r="3" fill="#3ad6ff" opacity="0.7" />
+      {/* wiper arm hint */}
+      <path d="M218 290 Q246 306 286 298" stroke="#22304d" stroke-width="3" opacity="0.6" />
+    </svg>
+  )
+}
+{
+  kind === 'nvr' && (
+    <svg class={className} viewBox="0 0 520 400" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustrative render of a network video recorder unit">
+      <defs>
+        <linearGradient id="nv-case" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#1a2540" />
+          <stop offset="1" stop-color="#0b1220" />
+        </linearGradient>
+      </defs>
+      {/* case */}
+      <rect x="86" y="112" width="348" height="176" rx="12" fill="url(#nv-case)" stroke="#2c3d61" stroke-width="1.5" />
+      {/* rack feet */}
+      <rect x="106" y="288" width="26" height="10" rx="2" fill="#141d33" stroke="#2c3d61" stroke-width="1" />
+      <rect x="388" y="288" width="26" height="10" rx="2" fill="#141d33" stroke="#2c3d61" stroke-width="1" />
+      {/* drive bays */}
+      <g>
+        <rect x="112" y="136" width="200" height="34" rx="5" fill="#101a2e" stroke="#243354" stroke-width="1.2" />
+        <rect x="120" y="146" width="10" height="14" rx="2" fill="#22304d" />
+        <rect x="136" y="146" width="120" height="12" rx="2" fill="#0c1425" stroke="#1c2a48" stroke-width="1" />
+        <circle cx="298" cy="153" r="4" fill="#3ddc97" opacity="0.9" />
+      </g>
+      <g>
+        <rect x="112" y="178" width="200" height="34" rx="5" fill="#101a2e" stroke="#243354" stroke-width="1.2" />
+        <rect x="120" y="188" width="10" height="14" rx="2" fill="#22304d" />
+        <rect x="136" y="188" width="120" height="12" rx="2" fill="#0c1425" stroke="#1c2a48" stroke-width="1" />
+        <circle cx="298" cy="195" r="4" fill="#22304d" />
+      </g>
+      {/* status leds */}
+      <g>
+        <circle cx="336" cy="146" r="4" fill="#3ddc97" />
+        <circle cx="352" cy="146" r="4" fill="#2e63ff" />
+        <circle cx="368" cy="146" r="4" fill="#22304d" />
+        <rect x="330" y="160" width="76" height="10" rx="2" fill="#0c1425" stroke="#1c2a48" stroke-width="1" />
+        <rect x="330" y="178" width="76" height="34" rx="4" fill="#0a1222" stroke="#1c2a48" stroke-width="1" />
+        <circle cx="342" cy="195" r="3.5" fill="#33456b" />
+        <rect x="356" y="188" width="42" height="4" rx="2" fill="#22304d" />
+        <rect x="356" y="197" width="30" height="4" rx="2" fill="#22304d" />
+      </g>
+      {/* ports */}
+      <g fill="#0c1425" stroke="#243354" stroke-width="1">
+        <rect x="112" y="228" width="34" height="30" rx="4" />
+        <rect x="152" y="236" width="16" height="14" rx="2" />
+        <rect x="174" y="236" width="16" height="14" rx="2" />
+        <rect x="196" y="236" width="16" height="14" rx="2" />
+        <rect x="218" y="236" width="16" height="14" rx="2" />
+      </g>
+      <rect x="248" y="232" width="54" height="22" rx="3" fill="#0a1222" stroke="#1c2a48" stroke-width="1" />
+      {/* vents */}
+      <g stroke="#1c2a48" stroke-width="2" opacity="0.8">
+        <path d="M318 236 L400 236" />
+        <path d="M318 244 L400 244" />
+        <path d="M318 252 L400 252" />
+      </g>
+    </svg>
+  )
+}

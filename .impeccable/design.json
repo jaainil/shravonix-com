@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-28T15:20:00+05:30",
+  "title": "Design System: Shravonix",
+  "extensions": {
+    "colorMeta": {
+      "blue": { "role": "primary", "displayName": "Shravonix Blue", "canonical": "#1d59f0", "tonalRamp": ["#0a1e63", "#123a9e", "#1d59f0", "#4a7cf5", "#7aa3f8", "#a9c6fb", "#d4e2fd", "#eef3fe"] },
+      "blue-deep": { "role": "primary", "displayName": "Deep Blue", "canonical": "#123a9e", "tonalRamp": ["#0a1e63", "#123a9e", "#2c53b3", "#5576c4", "#7e99d5", "#a7bcE6", "#d0ddf5", "#eef3fc"] },
+      "sky": { "role": "tertiary", "displayName": "Sky", "canonical": "#0779b8", "tonalRamp": ["#033a58", "#0779b8", "#2b93cc", "#56abda", "#81c3e7", "#addaf1", "#d6ecf8", "#f2f9fd"] },
+      "green": { "role": "tertiary", "displayName": "Signal Green", "canonical": "#0e7a45", "tonalRamp": ["#052e1a", "#0e7a45", "#2e9661", "#57ad81", "#82c4a1", "#addac2", "#d6ece0", "#f0f9f4"] },
+      "amber": { "role": "tertiary", "displayName": "Notice Amber", "canonical": "#9a5b0a", "tonalRamp": ["#3d2405", "#9a5b0a", "#b0762b", "#c6924f", "#dcae77", "#f0caa1", "#f7e2c9", "#fdf5ec"] },
+      "paper": { "role": "neutral", "displayName": "Paper", "canonical": "#f6f7f9", "tonalRamp": ["#1a1d24", "#2c3140", "#454b5c", "#6a7083", "#98a0b1", "#c3cad6", "#e2e6ed", "#f6f7f9"] },
+      "card": { "role": "neutral", "displayName": "Card White", "canonical": "#ffffff", "tonalRamp": ["#33363e", "#4d515c", "#6e7280", "#9498a5", "#bcc0ca", "#dde0e7", "#f0f2f5", "#ffffff"] },
+      "tint": { "role": "neutral", "displayName": "Tint", "canonical": "#eef1f5", "tonalRamp": ["#2a303c", "#414858", "#5f677a", "#828a9d", "#a8b0c1", "#ccd3de", "#e2e7ee", "#eef1f5"] },
+      "ink": { "role": "neutral", "displayName": "Ink Navy", "canonical": "#101b2e", "tonalRamp": ["#050a13", "#101b2e", "#283349", "#404c64", "#5f6c86", "#8893a8", "#b8c1d0", "#e6eaf1"] },
+      "ink-mid": { "role": "neutral", "displayName": "Ink Mid", "canonical": "#47536a", "tonalRamp": ["#141a26", "#47536a", "#616d84", "#7c879c", "#97a1b4", "#b4bccb", "#d4d9e2", "#eff1f5"] },
+      "ink-low": { "role": "neutral", "displayName": "Ink Low (contrast-corrected)", "canonical": "#5c6a86", "tonalRamp": ["#1c2230", "#5c6a86", "#75829b", "#8e99b0", "#a8b1c4", "#c2c9d7", "#dde2ea", "#f2f4f8"] },
+      "navy": { "role": "neutral", "displayName": "Navy Panel", "canonical": "#0c1526", "tonalRamp": ["#05080f", "#0c1526", "#1e2b45", "#304063", "#475880", "#6374a0", "#8a97bc", "#c8d0e2"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Page H1s and the closing CTA statement only. Archivo wdth 118, uppercase." },
+      "headline": { "displayName": "Headline", "purpose": "Section H2s. Archivo wdth 110." },
+      "body": { "displayName": "Body", "purpose": "Prose at standard width, 65–68ch measure." },
+      "label": { "displayName": "Data Voice", "purpose": "Mono, refs/specs/measurements only — never prose." }
+    },
+    "shadows": [],
+    "motion": [
+      { "name": "ease-out-document", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "All entrances: focus pull, reveal, leader-line draw." },
+      { "name": "focus-pull", "value": "blur(10px)→blur(0) + opacity, 1.1s, staggered 0.35s/0.7s", "purpose": "The single authored moment on hero hardware; disabled under reduced motion." },
+      { "name": "reveal", "value": "opacity 0→1 + translateY(14px), 0.7s", "purpose": "One quiet entrance per section via IntersectionObserver, unobserved after firing." }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "1024px" },
+      { "name": "xl", "value": "1280px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The one fill-blue action; every page routes through it.",
+      "html": "<button class=\"ds-btn-primary\">Book a free site survey <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 12 h15 M13.5 6.5 L19.5 12 l-6 5.5\"/></svg></button>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; gap: 0.625rem; background: #1d59f0; color: #fff; padding: 0.875rem 1.5rem; border: none; border-radius: 6px; font: 700 0.875rem/1 'Archivo Variable', sans-serif; transition: background 0.2s; cursor: pointer; } .ds-btn-primary:hover { background: #123a9e; } .ds-btn-primary:focus-visible { outline: 2px solid #1d59f0; outline-offset: 2px; }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Card-white outlined partner action (call, browse, WhatsApp).",
+      "html": "<a class=\"ds-btn-secondary\" href=\"#\">+91 XXXXX XXXXX</a>",
+      "css": ".ds-btn-secondary { display: inline-flex; align-items: center; gap: 0.625rem; background: #ffffff; color: #101b2e; padding: 0.875rem 1.5rem; border: 1px solid rgba(12,21,38,0.2); border-radius: 6px; font: 600 0.875rem/1 'Archivo Variable', sans-serif; text-decoration: none; transition: border-color 0.2s, color 0.2s; } .ds-btn-secondary:hover { border-color: #1d59f0; color: #123a9e; }"
+    },
+    {
+      "name": "Input Field",
+      "kind": "input",
+      "refersTo": "input-field",
+      "description": "Tint-filled document field with blue focus.",
+      "html": "<input class=\"ds-input\" type=\"text\" placeholder=\"Your name\" aria-label=\"Name\">",
+      "css": ".ds-input { width: 100%; background: #eef1f5; color: #101b2e; border: 1px solid rgba(12,21,38,0.2); border-radius: 6px; padding: 0.75rem 1rem; font: 400 0.875rem/1.4 'Archivo Variable', sans-serif; caret-color: #1d59f0; } .ds-input::placeholder { color: #5c6a86; } .ds-input:focus { outline: none; border-color: #1d59f0; }"
+    },
+    {
+      "name": "Data Chip",
+      "kind": "chip",
+      "refersTo": null,
+      "description": "Mono spec/reference chip; never wraps.",
+      "html": "<span class=\"ds-chip\">4 MP · IR 40 m</span>",
+      "css": ".ds-chip { display: inline-block; font: 400 0.6875rem/1 'JetBrains Mono Variable', monospace; letter-spacing: 0.05em; text-transform: uppercase; color: #47536a; background: #ffffff; border: 1px solid rgba(12,21,38,0.2); border-radius: 3px; padding: 4px 8px; white-space: nowrap; }"
+    },
+    {
+      "name": "Plate Card",
+      "kind": "card",
+      "refersTo": null,
+      "description": "Square rule-bordered document card; the system's container.",
+      "html": "<div class=\"ds-plate\"><h3>CCTV supply &amp; installation</h3><p>Surveyed first, installed clean, documented at handover.</p></div>",
+      "css": ".ds-plate { background: #ffffff; border: 1px solid rgba(12,21,38,0.1); padding: 1.75rem; font-family: 'Archivo Variable', sans-serif; } .ds-plate h3 { margin: 0 0 0.5rem; font-size: 1.25rem; font-weight: 750; font-variation-settings: 'wdth' 110; color: #101b2e; } .ds-plate p { margin: 0; font-size: 0.875rem; line-height: 1.6; color: #47536a; }"
+    },
+    {
+      "name": "Figure Plate Header",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "Document chrome strip: figure ref, caption, optional stamp.",
+      "html": "<div class=\"ds-fighead\"><span class=\"ds-figref\">Fig. 01</span><span class=\"ds-figcap\">IR Bullet · perimeter</span><span class=\"ds-stamp\">Surveyed</span></div>",
+      "css": ".ds-fighead { display: flex; align-items: center; gap: 0.75rem; border-bottom: 1px solid rgba(12,21,38,0.1); padding: 0.625rem 1rem; background: #ffffff; } .ds-figref { font: 700 0.6875rem/1 'JetBrains Mono Variable', monospace; letter-spacing: 0.05em; text-transform: uppercase; color: #101b2e; } .ds-figcap { font: 400 0.6875rem/1 'JetBrains Mono Variable', monospace; letter-spacing: 0.05em; text-transform: uppercase; color: #5c6a86; } .ds-stamp { margin-left: auto; display: inline-flex; border: 1.5px solid #0e7a45; color: #0e7a45; border-radius: 3px; padding: 4px 8px; font: 400 0.6875rem/1 'JetBrains Mono Variable', monospace; letter-spacing: 0.05em; text-transform: uppercase; transform: rotate(-1.2deg); white-space: nowrap; }"
+    },
+    {
+      "name": "Nav Link",
+      "kind": "nav",
+      "refersTo": null,
+      "description": "Hairline-separated sticky nav item; active turns deep blue.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Primary\"><a href=\"#\" aria-current=\"page\">Products</a><a href=\"#\">Industries</a><a href=\"#\">About</a></nav>",
+      "css": ".ds-nav { display: flex; background: #f6f7f9; font-family: 'Archivo Variable', sans-serif; } .ds-nav a { padding: 0 1rem; display: flex; align-items: center; font-size: 13px; font-weight: 500; color: #47536a; text-decoration: none; border-left: 1px solid rgba(12,21,38,0.1); transition: color 0.2s, background 0.2s; } .ds-nav a:hover { color: #101b2e; background: #eef1f5; } .ds-nav a[aria-current='page'] { color: #123a9e; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Quotation Sheet",
+    "overview": "The site reads like the honest technical document a buyer keeps: white paper grounds, figure-numbered product plates, ruled spec tables, stamp chips for process states. Every surface separates by a hairline rule, never a shadow. The personality is a dealership run by engineers — plain-spoken copy, specs before adjectives, one restrained brand blue doing all structural work. The single motion moment is a camera-lens focus pull on the hero hardware; everything else stays still or reveals once, quietly.",
+    "keyCharacteristics": [
+      "Light-only world; paper ground, white plates, tint insets",
+      "Hairline rules as the only separation device — zero box-shadows",
+      "One accent (Shravonix blue) at CTA weight; deep blue as the quiet text accent",
+      "Mono exclusively as a data voice: refs, specs, measurements",
+      "Figure plates with FIG refs and rotated stamp chips",
+      "Authored SVG hardware renders; no stock photography, no surveillance chrome"
+    ],
+    "rules": [
+      { "name": "The One Blue Rule", "body": "Fill-weight blue appears only on the primary action. Everything else blue is text or a 1px line.", "section": "colors" },
+      { "name": "The Rule-Not-Shadow Rule", "body": "Surfaces never separate by shadow; a 1px seam or a tint step is the only depth.", "section": "colors" },
+      { "name": "The Data-Voice Rule", "body": "Mono never styles prose; if it is not a measurement, reference, or timestamp, it is not mono.", "section": "typography" },
+      { "name": "The Flat-By-Default Rule", "body": "Resting state is flat; state changes recolor edges, they do not raise surfaces.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do separate surfaces with 1px seams or tint steps; keep plates square.",
+      "Do keep mono for refs, specs, chips and data strips only.",
+      "Do reserve fill-blue for the primary action; use deep blue for text accents.",
+      "Do use authored SVG renders for hardware; label illustrative art honestly.",
+      "Do verify quiet text against ≥4.5:1 on paper, card and tint."
+    ],
+    "donts": [
+      "Don't introduce shadows, glow, neon accents or dark mode — the world is paper and rules.",
+      "Don't use surveillance costume chrome (REC dots, LIVE badges, CAM-ID chips, timecode clocks); the owner explicitly rejected it.",
+      "Don't set prose in uppercase or mono, and never place an eyebrow/kicker above a heading.",
+      "Don't fabricate clients, counts, testimonials or brand names; unproven claims ship as marked placeholders only."
+    ]
+  }
+}

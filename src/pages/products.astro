@@ -1,0 +1,74 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Icon from '../components/Icon.astro';
+import CameraRender from '../components/hardware/CameraRender.astro';
+import CtaBand from '../components/CtaBand.astro';
+import { productCatalog } from '../data/site';
+---
+
+<BaseLayout
+  title="Products — Cameras, Domes, PTZ & Recorders · Shravonix"
+  description="Shravonix supplies bullet cameras, dome cameras, PTZ and NVR recorders across Anand–Nadiad, Gujarat. Specs listed, pricing quoted after survey."
+>
+  <section class="border-b border-[var(--seam)]">
+    <div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:py-20">
+      <h1 class="display max-w-4xl text-4xl sm:text-5xl lg:text-[3.4rem]">Hardware, without the mystery.</h1>
+      <p class="measure mt-6 text-lg leading-relaxed text-[var(--ink-mid)]">
+        This catalogue lists the lines we deal in and the specification tiers we quote most. Exact models and pricing
+        come with your survey quote — the right camera is a site decision, not a shopping-cart one.
+      </p>
+      <p class="data mt-5 flex items-center gap-2 text-[var(--amber)]">
+        <Icon name="clock" class="h-4 w-4" />
+        Catalogue being populated — ask us for current models in stock
+      </p>
+    </div>
+  </section>
+
+  {
+    productCatalog.map((cat, idx) => (
+      <section id={cat.id} class:list={['scroll-mt-24', idx % 2 === 1 ? 'border-b border-[var(--seam)] bg-[var(--card)]' : 'border-b border-[var(--seam)]']}>
+        <div class="mx-auto grid max-w-7xl gap-8 px-4 py-14 sm:px-6 lg:grid-cols-12 lg:py-20">
+          <div class="lg:col-span-4">
+            <div class="plate overflow-hidden bg-[var(--tint)] lg:sticky lg:top-24">
+              <CameraRender kind={cat.art} class="h-auto w-full" />
+            </div>
+          </div>
+          <div class="lg:col-span-8">
+            <h2 class="subdisplay text-3xl">{cat.title}</h2>
+            <p class="measure mt-3 text-[var(--ink-mid)]">{cat.intro}</p>
+            <div class="mt-8 grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
+              {cat.models.map((m) => (
+                <article class="plate bolted flex flex-col p-5">
+                  <div class="flex items-center justify-between gap-3">
+                    <h3 class="subdisplay text-base">{m.name}</h3>
+                    <span class="data shrink-0 whitespace-nowrap rounded border border-[var(--seam-strong)] px-1.5 py-0.5 text-[var(--ink-low)]">{m.tier}</span>
+                  </div>
+                  <dl class="mt-4 flex-1 space-y-2 border-t border-[var(--seam)] pt-4">
+                    {m.specs.map(([k, v]) => (
+                      <div class="flex items-baseline justify-between gap-4">
+                        <dt class="data whitespace-nowrap text-[var(--ink-low)]">{k}</dt>
+                        <dd class="text-right text-sm text-[var(--ink-mid)]">{v}</dd>
+                      </div>
+                    ))}
+                  </dl>
+                  <a
+                    href={`/contact#survey?product=${cat.id}`}
+                    class="mt-5 flex items-center justify-center gap-2 rounded-md border border-[var(--seam-strong)] px-4 py-2.5 text-xs font-bold uppercase tracking-wider text-[var(--blue-deep)] transition-colors hover:border-[var(--blue)] hover:bg-[var(--tint)]"
+                  >
+                    Request quote
+                    <Icon name="arrow" class="h-3.5 w-3.5" />
+                  </a>
+                </article>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+    ))
+  }
+
+  <CtaBand
+    title="Pricing after the survey, not before."
+    body="The honest quote depends on camera count, cable runs and storage math. Book the free survey and get a fixed price against a drawing."
+  />
+</BaseLayout>
