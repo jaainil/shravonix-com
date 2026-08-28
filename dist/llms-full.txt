@@ -1,0 +1,898 @@
+# Shravonix — CCTV Surveillance & Security Systems, Anand–Nadiad, Gujarat
+> Enterprise CCTV supply, installation and AMC & monitoring services for factories, campuses and businesses across Anand, Nadiad and Gujarat.
+
+*Complete documentation content below*
+
+# We design CCTV systems.We don't just sell them.
+> Shravonix designs, supplies, installs and maintains CCTV surveillance systems for factories, campuses, offices and homes across Anand, Nadiad and Gujarat. Enterprise-grade engineering, local accountability.
+
+Shravonix supplies and installs surveillance for factories, offices, institutions, shops and homes across Anand and Nadiad. Every job starts with a free site survey and a written design, so you know exactly what you are getting before you spend.
+
+[Book a free site survey](/contact#survey)[+91 XXXXX XXXXX](tel:+910000000000)
+
+- Supply
+
+  Genuine hardware, dealer pricing
+
+- Install
+
+  Designed, labelled, documented
+
+- Maintain
+
+  AMC with priority response
+
+4 MP · IR 40 mIP67 weather-sealedPoE
+
+Illustrative renders — exact models quoted after survey
+
+CoverageAnandNadiadKhedaAhmedabadVadodaraAcross GujaratAnand & Nadiad based · on-site support
+
+## Dealership hardware. Engineering discipline.
+
+The dealership gets you genuine cameras at fair prices. The engineering gets you a system that is placed right, cabled clean and documented. You want both.
+
+### CCTV supply & installation
+
+Ref. SV-01
+
+Camera systems designed around your site: surveyed first, installed clean, documented at handover.
+
+- Free site survey with camera-count estimate
+- Design-first: layout drawing and fixed quote before purchase
+- Bullet, dome and PTZ coverage for every lighting and distance condition
+- Storage engineered to your retention period — no surprise overwrites
+
+[Supply & installation](/services/cctv-surveillance)
+
+### AMC & monitoring
+
+Ref. SV-02
+
+A camera that failed last month records nothing. Annual contracts keep your system healthy and proven.
+
+- Scheduled preventive maintenance visits
+- Per-channel health checks: lenses, focus, night vision, recording
+- Storage and retention verification
+- Firmware and security updates
+
+[AMC & monitoring](/services/amc-monitoring)
+
+## Four phases. Nothing skipped.
+
+Nothing is bought before the design is approved, and nothing is left undocumented after the install. The same four steps on every job, from a single shop to a factory campus.
+
+1. 01Free
+
+   ### Site survey
+
+   We walk your site, map entry points, blind spots and lighting, and record what each camera must actually see — not guess from a floor plan.
+
+   Free survey report & camera-count estimate
+
+1. 02
+
+   ### System design
+
+   Camera positions, lens choices, storage math for your retention period, network load and power — engineered on paper before anything is purchased.
+
+   Layout drawing, BoM & fixed quote
+
+1. 03
+
+   ### Installation
+
+   Concealed cabling, labelled runs, correct mounting height and angle per the design. We commission, test every channel and hand over documentation.
+
+   Tested system + handover file (logins, layout, warranties)
+
+1. 04
+
+   ### AMC & monitoring
+
+   Scheduled preventive maintenance, lens and storage health checks, firmware updates and priority response when something needs attention.
+
+   Service visits, health reports & remote support
+
+## Hardware, spec'd plainly.
+
+The camera lines we deal in. Exact models and prices come with your survey quote, because the right camera depends on the site.
+
+[Full catalogue](/products)
+
+### [Bullet cameras](/products#bullet)
+
+[Long-range coverage for perimeters, yards and gates. Visible deterrence, IR night vision, weather-sealed.](/products#bullet)
+
+[3 lines · Fig. 01](/products#bullet)
+
+### [Dome cameras](/products#dome)
+
+[Discreet indoor coverage for lobbies, corridors and counters. Vandal-resistant options for touch-prone spots.](/products#dome)
+
+[2 lines · Fig. 02](/products#dome)
+
+### [PTZ cameras](/products#ptz)
+
+[Pan-tilt-zoom coverage where one camera must do the work of five — yards, campuses, large halls.](/products#ptz)
+
+[1 line · Fig. 03](/products#ptz)
+
+### [Recorders & storage](/products#nvr)
+
+[NVRs sized to your retention policy — the storage math is done in the design phase, not discovered after an incident.](/products#nvr)
+
+[3 lines · Fig. 04](/products#nvr)
+
+## Sites we know.
+
+A factory floor and a showroom need very different camera plans. We design for the site in front of us.
+
+### Factories & manufacturing
+
+Perimeter to production floor: gate, yard, raw-material bays, machine lines and dispatch. Built for dust, glare and 24×7 shifts.
+
+### Warehouses & logistics
+
+Track every movement from truck bay to rack aisle. Wide-area coverage with fewer, better-placed cameras.
+
+### Offices & IT parks
+
+Lobbies, lifts, server rooms and parking — professional coverage that respects privacy boundaries and looks the part.
+
+### Education & institutions
+
+Campus gates, corridors, buses and boundaries. Coverage that keeps students accounted for without turning the campus into a prison yard.
+
+### Hospitals & healthcare
+
+Entry control, emergency bays, pharmacy and parking — discreet systems that keep records when disputes happen.
+
+### Retail & showrooms
+
+Counter, floor and stockroom coverage with clean faces — enough detail to settle a dispute, discreet enough for customers.
+
+### Homes & apartments
+
+Enterprise-grade reliability, sized for a house or a society: gates, parking, stairwells and entry doors, viewable on your phone.
+
+[Detail by industry](/industries)
+
+## Signal over noise.
+
+Surveillance sales run on jargon and fear. We quote from a drawing, with numbers, and hand over a file that proves the work. It is the same discipline our engineers bring to networks, pointed at your perimeter.
+
+[About Shravonix](/about)
+
+- ### Storage sized before purchase
+
+  We calculate recorder capacity from your retention period and camera count, so footage from month eight still exists when you need it.
+
+- ### Network planned, not improvised
+
+  Switch capacity, PoE budgets and cabling routes are part of the drawing. Your cameras never fight your office internet for bandwidth.
+
+- ### Documentation handed over
+
+  Camera map, logins, cable schedule and warranty records in one file. The system is yours; you can service it anywhere.
+
+## Book a free site survey.
+
+We walk the site, mark where cameras should go, and hand you a written estimate. No obligation. You decide with the plan in your hand.
+
+[Request the survey](/contact#survey)[+91 XXXXX XXXXX](tel:+910000000000)
+
+Included in every survey
+
+- Camera positions marked on your layout
+- Camera count and budget estimate
+- Honest answer on what you don't need
+
+---
+
+# Signal over noise.
+> Shravonix is an engineering-led CCTV dealership and integrator based in Anand and Nadiad, Gujarat — surveillance designed with the same discipline as the infrastructure it watches.
+
+Shravonix started as an engineering habit, not a shop counter. Our founder spent years keeping servers and networks alive professionally — and kept meeting businesses whose CCTV had been sold to them, not designed for them: wrong lenses, overfull drives, cables nobody could trace, footage that arrived after the incident stopped mattering.
+
+So we turned the discipline around: survey before quote, design before purchase, documentation at handover, and maintenance that treats a fogged lens as the emergency it is. We are based in Anand and Nadiad and work across Gujarat — close enough to be on site fast, and accountable in person.
+
+## What we are
+
+- **A CCTV dealership** — genuine hardware across bullet, dome, PTZ and recording lines.
+- **A systems integrator** — the survey, the design drawing, the installation, the handover file.
+- **A maintenance partner** — AMC contracts that keep systems proven, patched and watched.
+- **Local** — Anand & Nadiad based, Gujarat covered, faces you can hold to the work.
+
+## How we work
+
+### Honest specs
+
+We quote against a drawing, not a mood. If a cheaper camera meets your need, that is the one in the BoM.
+
+### Documented everything
+
+Camera maps, credentials, cable schedules, warranties — handed over, so you own your system outright.
+
+### Footage that answers
+
+Every camera earns its position. If a placement cannot say what it is for, it does not get drilled.
+
+Signal over noise. It is not a slogan we picked for the wall — it is the difference between a system someone sold you and a system someone engineered.
+
+## Book a free site survey.
+
+We walk the site, mark the blind spots and hand you a camera-count estimate — no obligation, no invoice. You decide with the drawing in your hand.
+
+[Request the survey](/contact#survey)[WhatsApp](https://wa.me/910000000000)
+
+---
+
+# Talk to us.
+> Book a free CCTV site survey or request an AMC quote. Shravonix serves Anand, Nadiad and Gujarat — phone, WhatsApp, email.
+
+Tell us about the site and what keeps you up at night. We will come back with straight questions — and the survey costs nothing.
+
+[Call+91 XXXXX XXXXX](tel:+910000000000)[WhatsAppMessage us directly](https://wa.me/910000000000)[Emailinfo@shravonix.com](mailto:info@shravonix.com)
+
+- Hours
+
+  Mon – Sat · 9:00 – 19:00 IST
+
+- Based in
+
+  Anand & Nadiad, Gujarat, India
+
+- Coverage
+
+  All of Gujarat, B2B & B2C
+
+## Request a free site survey
+
+Opens your email app with the details filled in — no accounts, no spam.
+
+NameYour name
+
+Phone+91
+
+Site typeSelect…
+
+Site locationCity / industrial estate
+
+What do you need?
+
+Please fill name, phone, site type and location — the rest helps but can wait.
+
+Send survey request[Send on WhatsApp instead](https://wa.me/910000000000)
+
+---
+
+# Built for the sites we actually visit.
+> CCTV coverage designed per vertical: factories, warehouses, offices, education, healthcare, retail and homes across Anand–Nadiad and Gujarat.
+
+A camera plan for a factory floor looks nothing like one for a showroom. Same hardware family — different placement, weatherproofing, retention and privacy boundaries. This is what we design for, vertical by vertical.
+
+## Factories & manufacturing
+
+Perimeter to production floor: gate, yard, raw-material bays, machine lines and dispatch. Built for dust, glare and 24×7 shifts.
+
+- Perimeter & gates
+- Production lines
+- Loading bays
+- Stores & yards
+
+## Warehouses & logistics
+
+Track every movement from truck bay to rack aisle. Wide-area coverage with fewer, better-placed cameras.
+
+- Dock & yard
+- Aisles & racking
+- Dispatch desk
+- Cold storage
+
+## Offices & IT parks
+
+Lobbies, lifts, server rooms and parking — professional coverage that respects privacy boundaries and looks the part.
+
+- Reception & lobby
+- Server & comms rooms
+- Lifts & corridors
+- Parking
+
+## Education & institutions
+
+Campus gates, corridors, buses and boundaries. Coverage that keeps students accounted for without turning the campus into a prison yard.
+
+- Gates & boundaries
+- Corridors & common areas
+- Buses
+- Admin blocks
+
+## Hospitals & healthcare
+
+Entry control, emergency bays, pharmacy and parking — discreet systems that keep records when disputes happen.
+
+- Entries & reception
+- Pharmacy & stores
+- Emergency bays
+- Parking
+
+## Retail & showrooms
+
+Counter, floor and stockroom coverage with clean faces — enough detail to settle a dispute, discreet enough for customers.
+
+- Counters & billing
+- Sales floor
+- Stock rooms
+- Entry & display windows
+
+## Homes & apartments
+
+Enterprise-grade reliability, sized for a house or a society: gates, parking, stairwells and entry doors, viewable on your phone.
+
+- Gates & porches
+- Parking
+- Stairwells & lobbies
+- Entry doors
+
+## Privacy is part of the design.
+
+Cameras do not go where they should not. Work areas, rest rooms, neighbour boundaries — a compliant layout is part of the survey drawing, not an afterthought. Your staff see the plan before a single bracket is drilled.
+
+## B2B and B2C, same discipline.
+
+Enterprises get the full four-phase process. Homes and small shops get the same survey-and-design honesty, scaled down — a smaller system, not a lesser one.
+
+## Book a free site survey.
+
+We walk the site, mark the blind spots and hand you a camera-count estimate — no obligation, no invoice. You decide with the drawing in your hand.
+
+[Request the survey](/contact#survey)[WhatsApp](https://wa.me/910000000000)
+
+---
+
+# Cookie policy
+> Cookie policy for https://shravonix.com.
+
+Last updated: January 1, 2026
+
+## Cookie Policy
+
+This Cookie Policy explains how Shravonix ("we", "us", or "our") uses cookies and similar tracking technologies on our services. Effective Date: 2026-01-01.
+
+---
+
+## What Are Cookies?
+
+Cookies are small text files placed on your device by websites you visit. They are widely used to make websites work more efficiently and to provide information to site owners.
+
+Cookies can be "session cookies" (deleted when you close your browser) or "persistent cookies" (remain on your device until they expire or you delete them).
+
+---
+
+## Types of Cookies We Use
+
+- **Essential Cookies** — Required for the basic functioning of our services. These cannot be disabled.
+- **Analytics Cookies** — Help us understand how visitors interact with our services so we can improve them.
+
+---
+
+## Other Tracking Technologies
+
+In addition to cookies, we may use the following tracking technologies:
+
+- web beacons
+- local storage
+
+---
+
+## Third-Party Cookies
+
+The following third parties may set cookies through our services:
+
+- **Umami** — Website analytics to understand visitor behavior ([Privacy Policy](https://umami.is/privacy-policy))
+
+---
+
+## Your Consent
+
+- We display a cookie consent banner when you first visit our services.
+- You can manage your cookie preferences at any time via our preference panel.
+- You may withdraw your consent at any time; however, this will not affect the lawfulness of processing based on consent before its withdrawal.
+
+---
+
+## Managing Cookies
+
+Most web browsers allow you to control cookies through their settings. You can:
+
+- Delete cookies already stored on your device
+- Block cookies from being set on your device
+- Set your browser to notify you when a cookie is being set
+
+Please note that restricting cookies may impact the functionality of our services. Consult your browser's help documentation for instructions on managing cookies.
+
+---
+
+## Contact Us
+
+If you have questions about this Cookie Policy, please contact us:
+
+- \*\*Legal Name: \*\*Shravonix
+- \*\*Address: \*\*A/6 Shantivilla Residency, SVIT College Road, Vasad, Anand, Gujarat 388306, India
+- \*\*Email: \*\*<info@shravonix.com>
+
+---
+
+# Privacy policy
+> Privacy policy for https://shravonix.com.
+
+Last updated: January 1, 2026
+
+## Introduction
+
+This Privacy Policy describes how Shravonix ("we", "us", or "our") collects, uses, and shares information about you when you use our services. Effective Date: 2026-01-01.
+
+If you have questions about this policy, please contact us at <info@shravonix.com>.
+
+---
+
+## Information We Collect
+
+We collect the following categories of information:
+
+- **Account Information**
+
+  - Name
+  - Email address
+
+- **Usage Data**
+
+  - Pages visited
+  - Browser type
+  - IP address
+
+---
+
+## Data Retention
+
+We retain your data for the following periods:
+
+- **Account data**: Until account deletion
+
+---
+
+## Cookies and Tracking
+
+We use the following types of cookies and tracking technologies:
+
+- Essential cookies — required for the service to function
+- Analytics cookies — help us understand how the service is used
+
+---
+
+## Third-Party Services
+
+We share data with the following third-party services:
+
+- **Umami** — Website analytics to understand visitor behavior
+
+---
+
+## Your Rights
+
+You have the following rights regarding your personal data:
+
+- Right to access your personal data
+- Right to request deletion of your data
+- Right to correct inaccurate data
+- Right to receive your data in a portable format
+- Right to restrict how we process your data
+- Right to object to processing
+
+---
+
+## Contact Us
+
+Contact us:
+
+- \*\*Legal Name: \*\*Shravonix
+- \*\*Address: \*\*A/6 Shantivilla Residency, SVIT College Road, Vasad, Anand, Gujarat 388306, India
+- \*\*Email: \*\*<info@shravonix.com>
+
+---
+
+# Terms of service
+> Terms of service for https://shravonix.com.
+
+Last updated: January 1, 2026
+
+## Terms of Service
+
+These Terms of Service ("Terms") govern your use of services provided by Shravonix ("we", "us", or "our"). By using our services, you agree to these Terms. Effective Date: 2026-01-01.
+
+---
+
+## Acceptance of Terms
+
+You accept these Terms by:
+
+- using the service
+- creating an account
+
+---
+
+## Eligibility
+
+You must be at least 13 years old to use our services. By using the services, you represent that you meet this age requirement.
+
+---
+
+## Prohibited Uses
+
+You may not use our services for the following purposes:
+
+- Violating any applicable laws or regulations
+- Transmitting spam or malicious content
+
+---
+
+## Termination
+
+- We may terminate or suspend your access to our services at any time, with or without cause or notice.
+- You may terminate your use of our services at any time.
+
+---
+
+## Disclaimers
+
+- Our services are provided on an "as is" and "as available" basis.
+- We make no warranties, express or implied, regarding the reliability, accuracy, or fitness for a particular purpose of our services.
+
+---
+
+## Limitation of Liability
+
+- To the fullest extent permitted by law, we shall not be liable for any indirect, incidental, special, or consequential damages.
+- Total liability shall not exceed the greater of $100 or amounts paid in the past 12 months.
+
+---
+
+## Governing Law
+
+These Terms are governed by the laws of India, without regard to conflict of law principles.
+
+---
+
+## Changes to These Terms
+
+We may update these Terms from time to time. We will provide at least 30 days' notice via email or prominent notice on our website before changes take effect. Continued use of our services after changes constitutes acceptance of the revised Terms.
+
+---
+
+## Contact Us
+
+If you have questions about these Terms, please contact us:
+
+- \*\*Legal Name: \*\*Shravonix
+- \*\*Address: \*\*A/6 Shantivilla Residency, SVIT College Road, Vasad, Anand, Gujarat 388306, India
+- \*\*Email: \*\*<info@shravonix.com>
+
+---
+
+# Hardware, without the mystery.
+> Shravonix supplies bullet cameras, dome cameras, PTZ and NVR recorders across Anand–Nadiad, Gujarat. Specs listed, pricing quoted after survey.
+
+This catalogue lists the lines we deal in and the specification tiers we quote most. Exact models and pricing come with your survey quote — the right camera is a site decision, not a shopping-cart one.
+
+Catalogue being populated — ask us for current models in stock
+
+## Bullet cameras
+
+Long-range coverage for perimeters, yards and gates. Visible deterrence, IR night vision, weather-sealed.
+
+### IR Bullet — 2 MP
+
+Standard sites
+
+- Resolution
+
+  2 MP (1080p)
+
+- IR range
+
+  up to 30 m
+
+- Rating
+
+  IP66 weather-sealed
+
+- Best for
+
+  Gates, corridors, small shops
+
+[Request quote](/contact#survey?product=bullet)
+
+### IR Bullet — 4 MP
+
+Most requested
+
+- Resolution
+
+  4 MP (2K)
+
+- IR range
+
+  up to 40 m
+
+- Rating
+
+  IP67 · WDR
+
+- Best for
+
+  Perimeters, parking, factories
+
+[Request quote](/contact#survey?product=bullet)
+
+### IR Bullet — 8 MP
+
+Evidence-grade
+
+- Resolution
+
+  8 MP (4K)
+
+- IR range
+
+  up to 50 m
+
+- Rating
+
+  IP67 · WDR · smart IR
+
+- Best for
+
+  Yards, wide perimeters, plate reading
+
+[Request quote](/contact#survey?product=bullet)
+
+## Dome cameras
+
+Discreet indoor coverage for lobbies, corridors and counters. Vandal-resistant options for touch-prone spots.
+
+### IR Dome — 4 MP
+
+Indoor standard
+
+- Resolution
+
+  4 MP (2K)
+
+- IR range
+
+  up to 30 m
+
+- Mount
+
+  Ceiling / wall
+
+- Best for
+
+  Lobbies, corridors, billing desks
+
+[Request quote](/contact#survey?product=dome)
+
+### Vandal Dome — 4 MP
+
+Impact-rated
+
+- Resolution
+
+  4 MP (2K)
+
+- Housing
+
+  IK10 vandal-resistant
+
+- Rating
+
+  IP67 · WDR
+
+- Best for
+
+  Stairwells, lifts, warehouse racks
+
+[Request quote](/contact#survey?product=dome)
+
+## PTZ cameras
+
+Pan-tilt-zoom coverage where one camera must do the work of five — yards, campuses, large halls.
+
+### PTZ — 4 MP · 25×
+
+Wide-area
+
+- Resolution
+
+  4 MP (2K)
+
+- Optical zoom
+
+  25×
+
+- IR range
+
+  up to 100 m
+
+- Best for
+
+  Yards, campuses, factory floors
+
+[Request quote](/contact#survey?product=ptz)
+
+## Recorders & storage
+
+NVRs sized to your retention policy — the storage math is done in the design phase, not discovered after an incident.
+
+### NVR — 8 CH
+
+Small sites
+
+- Channels
+
+  8 POE ports
+
+- Storage
+
+  1 × surveillance HDD
+
+- Features
+
+  Remote view · mobile app
+
+- Best for
+
+  Homes, shops, small offices
+
+[Request quote](/contact#survey?product=nvr)
+
+### NVR — 16 CH
+
+Growing sites
+
+- Channels
+
+  16 POE ports
+
+- Storage
+
+  2 × surveillance HDD (RAID-ready)
+
+- Features
+
+  Remote view · smart playback
+
+- Best for
+
+  Warehouses, schools, showrooms
+
+[Request quote](/contact#survey?product=nvr)
+
+### NVR — 32 CH
+
+Enterprise
+
+- Channels
+
+  32 POE ports
+
+- Storage
+
+  4 × surveillance HDD
+
+- Features
+
+  RAID · dual NIC · user tiers
+
+- Best for
+
+  Factories, campuses, hospitals
+
+[Request quote](/contact#survey?product=nvr)
+
+## Pricing after the survey, not before.
+
+The honest quote depends on camera count, cable runs and storage math. Book the free survey and get a fixed price against a drawing.
+
+[Request the survey](/contact#survey)[WhatsApp](https://wa.me/910000000000)
+
+---
+
+# AMC & monitoring
+> Annual maintenance contracts for CCTV systems: scheduled preventive visits, per-channel health checks, storage verification, firmware updates and priority response across Anand–Nadiad, Gujarat.
+
+A camera that failed last month records nothing. Our annual maintenance contracts keep your surveillance proven and healthy: scheduled preventive visits, lens and recorder health checks, storage verification, firmware updates and priority response with remote support — so footage exists when you need it.
+
+[Request an AMC quote](/contact#survey)[+91 XXXXX XXXXX](tel:+910000000000)
+
+## What the contract covers
+
+- Scheduled preventive maintenance visits
+
+- Per-channel health checks: lenses, focus, night vision, recording
+
+- Storage and retention verification
+
+- Firmware and security updates
+
+- Priority response with defined visit windows
+
+- Remote diagnostics and support between visits
+
+## Most failures are quiet.
+
+A lens fogs. A drive fills. A cable works loose. The picture still shows on the monitor, right up until you actually need the footage. The AMC makes those failures loud before they cost you.
+
+### We find
+
+Fogged lenses, out-of-focus channels, dead IR arrays and failing drives, before you notice.
+
+### We prevent
+
+Scheduled visits, firmware patches, storage clean-ups and configuration backups.
+
+### We respond
+
+A defined visit window on faults. Remote diagnostics first, van on site when needed.
+
+## Keep the system proven.
+
+Ask for an AMC quote on your existing system. We audit it first, then tell you honestly what is worth maintaining.
+
+[Request the survey](/contact#survey)[WhatsApp](https://wa.me/910000000000)
+
+---
+
+# CCTV supply & installation
+> CCTV dealership and systems integration: bullet, dome and PTZ surveillance supplied, installed and documented for factories, campuses, offices and homes across Anand–Nadiad, Gujarat.
+
+We are a CCTV dealership and systems integrator. We supply surveillance hardware across bullet, dome and PTZ lines, then design and install the system around your site: camera count and placement from a real survey, storage sized to your retention policy, network and power done properly, and a handover file you can actually use.
+
+[Book a free site survey](/contact#survey)[Browse hardware](/products)
+
+## What you get, line by line.
+
+- Free site survey with camera-count estimate
+
+- Design-first: layout drawing and fixed quote before purchase
+
+- Bullet, dome and PTZ coverage for every lighting and distance condition
+
+- Storage engineered to your retention period — no surprise overwrites
+
+- Remote viewing on phone and office systems, configured and tested
+
+- Concealed, labelled cabling with a full handover document
+
+## Camera lines we deal in
+
+[Full catalogue →](/products)
+
+### [Bullet cameras](/products#bullet)
+
+[Long-range coverage for perimeters, yards and gates. Visible deterrence, IR night vision, weather-sealed.](/products#bullet)
+
+### [Dome cameras](/products#dome)
+
+[Discreet indoor coverage for lobbies, corridors and counters. Vandal-resistant options for touch-prone spots.](/products#dome)
+
+### [PTZ cameras](/products#ptz)
+
+[Pan-tilt-zoom coverage where one camera must do the work of five — yards, campuses, large halls.](/products#ptz)
+
+## Book a free site survey.
+
+We walk the site, mark the blind spots and hand you a camera-count estimate — no obligation, no invoice. You decide with the drawing in your hand.
+
+[Request the survey](/contact#survey)[WhatsApp](https://wa.me/910000000000)

@@ -1,0 +1,13 @@
+# Shravonix — CCTV Surveillance & Security Systems, Anand–Nadiad, Gujarat
+> Structure-only documentation
+
+- [We design CCTV systems.We don't just sell them.](https://shravonix.com/)
+- [Signal over noise.](https://shravonix.com/about/)
+- [Talk to us.](https://shravonix.com/contact/)
+- [Built for the sites we actually visit.](https://shravonix.com/industries/)
+- [Cookie policy](https://shravonix.com/legal/cookies/)
+- [Privacy policy](https://shravonix.com/legal/privacy/)
+- [Terms of service](https://shravonix.com/legal/terms/)
+- [Hardware, without the mystery.](https://shravonix.com/products/)
+- [AMC & monitoring](https://shravonix.com/services/amc-monitoring/)
+- [CCTV supply & installation](https://shravonix.com/services/cctv-surveillance/)
